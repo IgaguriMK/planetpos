@@ -1,0 +1,15 @@
+
+
+p {
+    text-indent: 1em;
+    margin-left: 5mm;
+    margin-right: 5mm;
+}
+
+a {
+    color: #666666;
+}
+
+@page {
+    size: A4;
+}
