@@ -1,4 +1,8 @@
 
+body {
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
 
 /* 段落 */
 p{
@@ -31,8 +35,23 @@ table {
     margin-top: 2em;
     margin-bottom: 2em;
     text-indent: 1em;
+    border-collapse: collapse;
 }
 
+tr {
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+}
+
+tr.header {
+    border-top: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+}
+
+tbody>tr:last-of-type {
+    border-top: solid 1px #000000;
+    border-bottom: solid 2px #000000;
+}
 
 @page {
     size: A4;
