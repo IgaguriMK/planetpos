@@ -1,0 +1,11 @@
+{
+    "time": "20180416222228",
+    "from": "Earth",
+    "dists": [
+        {"name": "Sol", "dist": 493},
+        {"name": "Mercury", "dist": 692},
+        {"name": "Venus", "dist": 732},
+        {"name": "Mars", "dist": 947},
+        {"name": "Jupiter", "dist": 2867}
+    ]
+}

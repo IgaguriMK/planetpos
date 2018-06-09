@@ -1,0 +1,8 @@
+{
+    "time": "20180416222234",
+    "from": "Earth",
+    "dists": [
+        {"name": "Saturm", "dist": 5187},
+        {"name": "Uranus", "dist": 8882}
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "time": "20180416222239",
+    "from": "Earth",
+    "dists": [
+        {"name": "Neptune", "dist": 15350},
+        {"name": "Haumea", "dist": 17538},
+        {"name": "90482 Orcus", "dist": 18040},
+        {"name": "Salacia", "dist": 18637},
+        {"name": "Makemake", "dist": 20363}
+    ]
+}

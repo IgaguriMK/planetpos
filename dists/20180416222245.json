@@ -1,0 +1,11 @@
+{
+    "time": "20180416222245",
+    "from": "Earth",
+    "dists": [
+        {"name": "(307261) 2002 MS4", "dist": 24262},
+        {"name": "Eris", "dist": 32455},
+        {"name": "(225088) 2007 OR10", "dist": 50114},
+        {"name": "Persephone", "dist": 455234},
+        {"name": "Sedna", "dist": 468381}
+    ]
+}

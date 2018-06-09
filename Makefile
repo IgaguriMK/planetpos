@@ -1,12 +1,21 @@
 .PHONY: build
-build: solvesample
+build: solve distcompile getbodyinfo
 
-.PHONY: solvesample
-solvesample:
-	go build solvesample
+
+.PHONY: solve
+solve:
+	go build solve.go
+
+.PHONY: distcompile
+distcompile:
+	go build distcompile.go
+
+.PHONY: getbodyinfo
+getbodyinfo:
+	go build getbodyinfo.go
 
 
 .PHONY: clean
 clean:
-	- rm solvesample
+	- rm solve
 	- *.exe

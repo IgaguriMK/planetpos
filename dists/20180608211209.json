@@ -1,0 +1,13 @@
+{
+    "time": "20180608211209",
+    "from": "Earth",
+    "dists": [
+        {"name": "Venus", "dist": 587},
+        {"name": "Mars", "dist": 755},
+        {"name": "Jupiter", "dist": 3128},
+        {"name": "Saturn", "dist": 4851},
+        {"name": "Urnus", "dist": 9312},
+        {"name": "Neptune", "dist": 15282},
+        {"name": "Pluto", "dist": 21542}
+    ]
+}

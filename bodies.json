@@ -1,0 +1,204 @@
+{
+	"name": "Sol",
+	"refBody": "Earth",
+	"bodies": [
+		{
+			"name": "Mercury",
+			"argOfPeriapsis": 29.124001,
+			"orbitalEccentricity": 0.2056,
+			"orbitalInclination": 7,
+			"orbitalPeriod": 87.96910300925926,
+			"semiMajorAxis": 0.3870983729984333,
+			"offset": 1,
+			"radius": 2439.7,
+			"type": "Planet"
+		},
+		{
+			"name": "Venus",
+			"argOfPeriapsis": 55.186001,
+			"orbitalEccentricity": 0.0067,
+			"orbitalInclination": 3.395,
+			"orbitalPeriod": 224.70099537037038,
+			"semiMajorAxis": 0.7233256732710969,
+			"offset": 1,
+			"radius": 6051.8,
+			"type": "Planet"
+		},
+		{
+			"name": "Earth",
+			"argOfPeriapsis": 114.207832,
+			"orbitalEccentricity": 0.0167,
+			"orbitalInclination": 0,
+			"orbitalPeriod": 365.25636574074076,
+			"semiMajorAxis": 1.0000007214273805,
+			"offset": 1,
+			"radius": 6378.1,
+			"type": "Planet"
+		},
+		{
+			"name": "Mars",
+			"argOfPeriapsis": 286.536987,
+			"orbitalEccentricity": 0.0934,
+			"orbitalInclination": 1.85,
+			"orbitalPeriod": 686.9710185185185,
+			"semiMajorAxis": 1.5236785990430544,
+			"offset": 1,
+			"radius": 3396.2,
+			"type": "Planet"
+		},
+		{
+			"name": "Jupiter",
+			"argOfPeriapsis": 275.06601,
+			"orbitalEccentricity": 0.048775,
+			"orbitalInclination": 1.305,
+			"orbitalPeriod": 4332.58962962963,
+			"semiMajorAxis": 5.204265930076503,
+			"offset": 1,
+			"radius": 71492,
+			"type": "Planet"
+		},
+		{
+			"name": "Saturn",
+			"argOfPeriapsis": 336.013855,
+			"orbitalEccentricity": 0.055723,
+			"orbitalInclination": 2.48524,
+			"orbitalPeriod": 10759.22,
+			"semiMajorAxis": 9.582015635788057,
+			"offset": 1,
+			"radius": 59000,
+			"type": "Planet"
+		},
+		{
+			"name": "Uranus",
+			"argOfPeriapsis": 96.998856,
+			"orbitalEccentricity": 0.04722,
+			"orbitalInclination": 0.772556,
+			"orbitalPeriod": 30687.149629629628,
+			"semiMajorAxis": 19.229408742861203,
+			"offset": 1,
+			"radius": 25559,
+			"type": "Planet"
+		},
+		{
+			"name": "Neptune",
+			"argOfPeriapsis": 273.219421,
+			"orbitalEccentricity": 0.008678,
+			"orbitalInclination": 1.767975,
+			"orbitalPeriod": 60190.03259259259,
+			"semiMajorAxis": 29.809943509790877,
+			"offset": 1,
+			"radius": 24764,
+			"type": "Planet"
+		},
+		{
+			"name": "90482 Orcus",
+			"argOfPeriapsis": 105.460564,
+			"orbitalEccentricity": 0.21799,
+			"orbitalInclination": 44.044498,
+			"orbitalPeriod": 1735.79,
+			"semiMajorAxis": 39.46902900146693,
+			"offset": 1,
+			"radius": 917,
+			"type": "Planet"
+		},
+		{
+			"name": "(307261) 2002 MS4",
+			"argOfPeriapsis": 197.356552,
+			"orbitalEccentricity": 0.144,
+			"orbitalInclination": 17.677,
+			"orbitalPeriod": 1886.15,
+			"semiMajorAxis": 41.71702990828732,
+			"offset": 1,
+			"radius": 934,
+			"type": "Planet"
+		},
+		{
+			"name": "Salacia",
+			"argOfPeriapsis": 18.199842,
+			"orbitalEccentricity": 0.109,
+			"orbitalInclination": 23.936001,
+			"orbitalPeriod": 1895.88,
+			"semiMajorAxis": 41.860030093810686,
+			"offset": 1,
+			"radius": 854,
+			"type": "Planet"
+		},
+		{
+			"name": "Haumea",
+			"argOfPeriapsis": 27.453764,
+			"orbitalEccentricity": 0.19126,
+			"orbitalInclination": 28.190001,
+			"orbitalPeriod": 1988.84,
+			"semiMajorAxis": 43.21802893917794,
+			"offset": 1,
+			"radius": 620,
+			"type": "Planet"
+		},
+		{
+			"name": "Quaoar",
+			"argOfPeriapsis": 14.944939,
+			"orbitalEccentricity": 0.034,
+			"orbitalInclination": 7.987,
+			"orbitalPeriod": 1999.55,
+			"semiMajorAxis": 43.37303254688638,
+			"offset": 1,
+			"radius": 1074,
+			"type": "Planet"
+		},
+		{
+			"name": "Makemake",
+			"argOfPeriapsis": 305.57251,
+			"orbitalEccentricity": 0.15586,
+			"orbitalInclination": 29.006849,
+			"orbitalPeriod": 2163.63,
+			"semiMajorAxis": 45.71503163952453,
+			"offset": 1,
+			"radius": 715,
+			"type": "Planet"
+		},
+		{
+			"name": "(225088) 2007 OR10",
+			"argOfPeriapsis": 179.261887,
+			"orbitalEccentricity": 0.5066,
+			"orbitalInclination": 30.943001,
+			"orbitalPeriod": 3832.57,
+			"semiMajorAxis": 66.92504709870848,
+			"offset": 1,
+			"radius": 1280,
+			"type": "Planet"
+		},
+		{
+			"name": "Eris",
+			"argOfPeriapsis": 91.965385,
+			"orbitalEccentricity": 0.44,
+			"orbitalInclination": 44.044498,
+			"orbitalPeriod": 3906.2796296296297,
+			"semiMajorAxis": 67.78104355272752,
+			"offset": 1,
+			"radius": 1163,
+			"type": "Planet"
+		},
+		{
+			"name": "Sedna",
+			"argOfPeriapsis": 264.631866,
+			"orbitalEccentricity": 0.854,
+			"orbitalInclination": 30.943001,
+			"orbitalPeriod": 79800,
+			"semiMajorAxis": 506.2003718453728,
+			"offset": 1,
+			"radius": 995,
+			"type": "Planet"
+		},
+		{
+			"name": "Persephone",
+			"argOfPeriapsis": 246.052597,
+			"orbitalEccentricity": 0.6,
+			"orbitalInclination": 30,
+			"orbitalPeriod": 105000,
+			"semiMajorAxis": 700.0004979898688,
+			"offset": 1,
+			"radius": 14427.148,
+			"type": "Planet"
+		}
+	]
+}
