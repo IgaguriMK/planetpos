@@ -23,9 +23,9 @@ Elite:Dangerousでは、星系内の天体の距離を取得することは容�
 
 ## 公転軌道の軌道要素
 
-固定された中心点を楕円軌道で公転する天体の位置は、一般に表2.1の8つの要素で示される。
+固定された中心点を楕円軌道で公転する天体の位置は、一般に表2.1.1の8つの要素で示される。
 
-: 表2.1 軌道要素の一覧
+: 表2.1.1 軌道要素の一覧
 
 | 名称 | 記号 | 既知/未知 | 大まかな種別 | 説明 |
 |:----:|:----:|:---------:|:------------:|:-----|
@@ -37,3 +37,106 @@ Elite:Dangerousでは、星系内の天体の距離を取得することは容�
 | 軌道周期 | $T$ | 既知 | 軌道上の位置 | 軌道を一周する時間 |
 | 元期での平均近点角 | $M_0$ | 未知 | 軌道上の位置 | 元期における天体の周回の割合 |
 | 元期 | $t_0$ | 定義値 | 軌道上の位置 | 計算の基準となる時刻 |
+
+
+元期$t_0$は、銀河標準時で3300年1月1日0時0分0秒とする。
+
+
+## 位置の決定
+
+### 楕円軌道の形状と楕円上の位置
+
+楕円上を動く点の位置は、次の極座標を用いた式で表される。
+
+$$ r(\theta) = \frac{l}{1 + \epsilon \cos{\theta}} $$
+
+$\theta = 0$のときの位置が近点であり、$\theta = \pi$のときの位置が遠点である。
+よって、軌道長半径の定義より$r(0) - r(\pi) = a$だから、$l$は以下のようになる。
+
+$$ \frac{l}{1 + \epsilon \cos{0}} - \frac{l}{1 + \epsilon \cos{\pi}} = a $$
+$$ l \frac{(1 - \epsilon) + (1 + \epsilon)}{1 - \epsilon ^2} = a $$
+$$  \frac{2l}{1 - \epsilon ^2} = a $$
+$$  l = \frac{a (1 - \epsilon ^2)}{2} $$
+
+
+### 楕円軌道の回転(近点引数)
+
+近点引数$\omega$は、近点の位置の基準方向からの角度を表す。
+よって、近点引数を考慮した式は以下の通り。
+
+$$ r(\theta) = \frac{l}{1 + \epsilon \cos{(\theta - \omega)}} $$
+
+
+### 3次元空間の定義
+
+座標系は左手系とし、基準平面はxz平面とする。
+
+![図2.3.1 座標系の定義](axis.png)
+
+楕円軌道をxz平面に配置すると、天体の座標は以下のようになる。
+
+$$
+\boldsymbol{P_{plane}}(\theta) = \left[ \begin{array}{c}
+  r(\theta) \cos \theta \\
+  0 \\
+  r(\theta) \sin \theta \\
+\end{array} \right]
+$$
+
+また、x軸周りの回転行列$R_x$、z軸周りの回転行列$R_z$をそれぞれ導入する。
+
+$$
+\boldsymbol{R_x}(\phi) = \left[ \begin{array}{cccc}
+  1 & 0 & 0 \\
+  0 & \cos \phi & -\sin \phi \\
+  0 & \sin \phi & \cos \phi \\
+\end{array} \right]
+$$
+$$
+\boldsymbol{R_z}(\phi) = \left[ \begin{array}{cccc}
+  \cos \phi & 0 & \sin \phi \\
+  0 & 1 & 0 \\
+  -\sin \phi & 0 & \cos \phi \\
+\end{array} \right]
+$$
+
+
+### 軌道傾斜角
+
+軌道傾斜角$i$は、軌道面をx軸周りで回転することに相当する。
+したがって、$R_x(i)$の回転に相当する。
+
+
+### 昇交点赤経
+
+昇交点赤経$\Omega$は、天体のが基準平面と下から上に交差する点の赤経である。
+したがって、$R_z(\Omega)$の回転に相当する。
+
+
+### 3次元空間内での座標
+
+ここまでの結果より、3次元座標における天体の座標を$\theta$の関数として表すことができる。
+
+$$ \boldsymbol{P_{space}}(\theta) = \boldsymbol{R_z}(\Omega) \boldsymbol{R_x}(i) \boldsymbol{P_{plane}}(\theta) $$
+
+
+### 軌道の角度の導出
+
+今まで計算した座標は、変数として角度$\theta$を取っている。
+実際に計算する際には時刻$t$を変数とするので、$t$から$\theta$への変換が必要になる。
+
+$t_r$を近点からの経過時間とすると、ケプラーの第二法則より、以下の式が成り立つ。
+
+$$ \mathrm{d} t_r \propto r^2 \mathrm{d} \theta $$
+$$ \mathrm{d} t_r \propto \frac{\mathrm{d} \theta}{(1 + \epsilon \cos \theta)^2}  $$
+
+
+$t_r$の範囲は$0 \le t_r \lt T$、$\theta$の範囲は$0 \le \theta \lt 2 \pi$であるから、積分することで次の式を得る。
+
+$$ \frac{t_r}{T} = \frac{\Theta(\theta)}{\Theta(2 \pi)} $$
+$$ \Theta(\theta) = t_r \frac{\Theta(2 \pi)}{T} $$
+$$ \theta = \Theta^{-1} \left( t_r \frac{\Theta(2 \pi)}{T} \right) $$
+ただし、
+$$ \Theta(\theta) = \int^\theta_0 \frac{\mathrm{d} \phi}{(1+\epsilon \cos \phi)^2} $$
+
+この$\Theta(\phi)$に現れる積分は複雑なので、数値積分して逆関数を求める。

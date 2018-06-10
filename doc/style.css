@@ -27,6 +27,24 @@ a {
 }
 
 
+/* 画像 */
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+figcaption{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+
 /* 表 */
 
 table {
@@ -34,7 +52,6 @@ table {
     margin-right: auto;
     margin-top: 2em;
     margin-bottom: 2em;
-    text-indent: 1em;
     border-collapse: collapse;
 }
 
@@ -53,6 +70,41 @@ tbody>tr:last-of-type {
     border-bottom: solid 2px #000000;
 }
 
+/* その他 */
+
+
+
+/* 印刷 */
+
 @page {
     size: A4;
+}
+
+@media print {
+    header{
+        page-break-after: always;
+    }
+
+    nav{
+        margin-top: 4cm;
+        margin-bottom: 4cm;
+        page-break-after: always;
+    }
+    
+    header>h1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12cm;
+        text-align: center;
+    }
+    
+    header>p{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        page-break-after: avoid;
+    }
 }
