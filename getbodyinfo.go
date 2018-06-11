@@ -45,7 +45,9 @@ func main() {
 	for _, b := range bodies.Bodies {
 		if b.Name == refBody {
 			offset = b.Offset
-			break
+		}
+		if b.IsMainStar {
+			bodies.MainStar = b.Name
 		}
 	}
 	if offset == -1 {

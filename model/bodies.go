@@ -1,9 +1,10 @@
 package model
 
 type Bodies struct {
-	Name    string `json:"name"`
-	RefBody string `json:"refBody"`
-	Bodies  []Body `json:"bodies"`
+	Name     string `json:"name"`
+	MainStar string `json:"mainStar"`
+	RefBody  string `json:"refBody"`
+	Bodies   []Body `json:"bodies"`
 }
 
 type Body struct {
@@ -16,4 +17,5 @@ type Body struct {
 	Offset              int64   `json:"offset"`
 	Radius              float64 `json:"radius"`
 	Type                string  `json:"type"`
+	IsMainStar          bool    `json:"isMainStar"`
 }

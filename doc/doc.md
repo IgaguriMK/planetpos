@@ -134,9 +134,16 @@ $$ \mathrm{d} t_r \propto \frac{\mathrm{d} \theta}{(1 + \epsilon \cos \theta)^2}
 $t_r$の範囲は$0 \le t_r \lt T$、$\theta$の範囲は$0 \le \theta \lt 2 \pi$であるから、積分することで次の式を得る。
 
 $$ \frac{t_r}{T} = \frac{\Theta(\theta)}{\Theta(2 \pi)} $$
-$$ \Theta(\theta) = t_r \frac{\Theta(2 \pi)}{T} $$
-$$ \theta = \Theta^{-1} \left( t_r \frac{\Theta(2 \pi)}{T} \right) $$
+$$ \Theta(\theta) = \frac{t_r}{T}\Theta(2 \pi) $$
+$$ \theta = \Theta^{-1} \left( \frac{t_r}{T}\Theta(2 \pi) \right) $$
 ただし、
 $$ \Theta(\theta) = \int^\theta_0 \frac{\mathrm{d} \phi}{(1+\epsilon \cos \phi)^2} $$
 
 この$\Theta(\phi)$に現れる積分は複雑なので、数値積分して逆関数を求める。
+
+
+### 軌道上の初期位置の反映
+
+ここまでの計算では、元期$t=0$において天体は近点にいるものとして扱われる。
+実際には元期における初期位置はさまざまであり、そのパラメータが平均近点角$M_0$である。
+これは、元期において天体が近点からの経過時間が$\frac{M_0}{2 \pi}$周分の位置にいることを表す。

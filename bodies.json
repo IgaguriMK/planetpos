@@ -1,5 +1,6 @@
 {
 	"name": "Sol",
+	"mainStar": "Sol",
 	"refBody": "Earth",
 	"bodies": [
 		{
@@ -11,7 +12,8 @@
 			"semiMajorAxis": 0.3870983729984333,
 			"offset": 1,
 			"radius": 2439.7,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Venus",
@@ -22,7 +24,8 @@
 			"semiMajorAxis": 0.7233256732710969,
 			"offset": 1,
 			"radius": 6051.8,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Earth",
@@ -33,7 +36,8 @@
 			"semiMajorAxis": 1.0000007214273805,
 			"offset": 1,
 			"radius": 6378.1,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Mars",
@@ -44,7 +48,8 @@
 			"semiMajorAxis": 1.5236785990430544,
 			"offset": 1,
 			"radius": 3396.2,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Jupiter",
@@ -55,7 +60,8 @@
 			"semiMajorAxis": 5.204265930076503,
 			"offset": 1,
 			"radius": 71492,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Saturn",
@@ -66,7 +72,8 @@
 			"semiMajorAxis": 9.582015635788057,
 			"offset": 1,
 			"radius": 59000,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Uranus",
@@ -77,7 +84,8 @@
 			"semiMajorAxis": 19.229408742861203,
 			"offset": 1,
 			"radius": 25559,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Neptune",
@@ -88,7 +96,32 @@
 			"semiMajorAxis": 29.809943509790877,
 			"offset": 1,
 			"radius": 24764,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
+		},
+		{
+			"name": "Pluto",
+			"argOfPeriapsis": 0,
+			"orbitalEccentricity": 0,
+			"orbitalInclination": 0.001,
+			"orbitalPeriod": 6.393943865740741,
+			"semiMajorAxis": 0.000013596588911876806,
+			"offset": 1,
+			"radius": 1153,
+			"type": "Planet",
+			"isMainStar": false
+		},
+		{
+			"name": "Charon",
+			"argOfPeriapsis": 180,
+			"orbitalEccentricity": 0,
+			"orbitalInclination": 0.001,
+			"orbitalPeriod": 6.393943865740741,
+			"semiMajorAxis": 0.0001172274439331308,
+			"offset": 1,
+			"radius": 603.5,
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "90482 Orcus",
@@ -99,7 +132,8 @@
 			"semiMajorAxis": 39.46902900146693,
 			"offset": 1,
 			"radius": 917,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "(307261) 2002 MS4",
@@ -110,7 +144,8 @@
 			"semiMajorAxis": 41.71702990828732,
 			"offset": 1,
 			"radius": 934,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Salacia",
@@ -121,7 +156,8 @@
 			"semiMajorAxis": 41.860030093810686,
 			"offset": 1,
 			"radius": 854,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Haumea",
@@ -132,7 +168,8 @@
 			"semiMajorAxis": 43.21802893917794,
 			"offset": 1,
 			"radius": 620,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Quaoar",
@@ -143,7 +180,8 @@
 			"semiMajorAxis": 43.37303254688638,
 			"offset": 1,
 			"radius": 1074,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Makemake",
@@ -154,7 +192,8 @@
 			"semiMajorAxis": 45.71503163952453,
 			"offset": 1,
 			"radius": 715,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "(225088) 2007 OR10",
@@ -165,7 +204,8 @@
 			"semiMajorAxis": 66.92504709870848,
 			"offset": 1,
 			"radius": 1280,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Eris",
@@ -176,7 +216,8 @@
 			"semiMajorAxis": 67.78104355272752,
 			"offset": 1,
 			"radius": 1163,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Sedna",
@@ -187,7 +228,8 @@
 			"semiMajorAxis": 506.2003718453728,
 			"offset": 1,
 			"radius": 995,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		},
 		{
 			"name": "Persephone",
@@ -198,7 +240,8 @@
 			"semiMajorAxis": 700.0004979898688,
 			"offset": 1,
 			"radius": 14427.148,
-			"type": "Planet"
+			"type": "Planet",
+			"isMainStar": false
 		}
 	]
 }

@@ -1,5 +1,5 @@
 .PHONY: build
-build: solve distcompile getbodyinfo
+build: solve distcompile getbodyinfo doc
 
 
 .PHONY: solve
@@ -13,6 +13,10 @@ distcompile:
 .PHONY: getbodyinfo
 getbodyinfo:
 	go build getbodyinfo.go
+
+.PHONY: doc
+doc:
+	make -C doc
 
 
 .PHONY: clean
